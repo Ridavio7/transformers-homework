@@ -1,15 +1,15 @@
 """Shared reproducibility helpers for the Transformer homework.
 
-For reproducing the saved Bug Hunt training run, use SEED = 0.
+For reproducing the saved Bug Hunt training run, use SEED = 42.
 Call set_seed() before creating the model, sampling batches or creating the optimizer.
 """
+
 import random
 
 import numpy as np
 import torch
 
-
-SEED = 0
+SEED = 42
 
 
 def set_seed(seed: int = SEED) -> None:
